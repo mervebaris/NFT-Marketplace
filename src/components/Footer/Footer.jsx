@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-import './footer.css';
-
+import "./footer.css";
 
 const MY__ACCOUNT = [
   {
@@ -77,8 +76,6 @@ const Footer = () => {
               <p>
                 Then, approve the NFT collection for the NFTs you want to
                 deposit and pay a one-time approval gas fee for the NFT
-                collection(s). This authorizes Binance to process your NFT
-                deposit request.
               </p>
             </div>
           </Col>
@@ -106,7 +103,7 @@ const Footer = () => {
           </Col>
 
           <Col lg="2" md="3" sm="6">
-          <h5>Company</h5>
+            <h5>Company</h5>
             <ListGroup className="list__group">
               {COMPANY.map((item, index) => (
                 <ListGroupItem key={index} className="list__item">
@@ -118,14 +115,41 @@ const Footer = () => {
 
           <Col lg="3" md="6" sm="6">
             <h5>Newsletter</h5>
-            <input type="text" className="newsletter" placeholder="Email"/>
+            <input type="text" className="newsletter" placeholder="Email" />
             <div className="social__links d-flex gap-3 align-items-center">
-              <span><Link to='#'><i class="ri-facebook-line"></i></Link></span>
-              <span><Link to='#'><i class="ri-instagram-line"></i></Link></span>
-              <span><Link to='#'><i class="ri-twitter-line"></i></Link></span>
-              <span><Link to='#'><i class="ri-telegram-line"></i></Link></span>
-              <span><Link to='#'><i class="ri-discord-line"></i></Link></span>
+              <span>
+                <Link to="#">
+                  <i class="ri-facebook-line"></i>
+                </Link>
+              </span>
+              <span>
+                <Link to="#">
+                  <i class="ri-instagram-line"></i>
+                </Link>
+              </span>
+              <span>
+                <Link to="#">
+                  <i class="ri-twitter-line"></i>
+                </Link>
+              </span>
+              <span>
+                <Link to="#">
+                  <i class="ri-telegram-line"></i>
+                </Link>
+              </span>
+              <span>
+                <Link to="#">
+                  <i class="ri-discord-line"></i>
+                </Link>
+              </span>
             </div>
+          </Col>
+
+          <Col lg="12" className="mt-4 text-center ">
+            <p className="copyright">
+              Copyrights 2023, developed by Merve Barış. @Merve's Tech Diary All
+              Rights Reserved.
+            </p>
           </Col>
         </Row>
       </Container>

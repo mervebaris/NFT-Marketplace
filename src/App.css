@@ -39,3 +39,15 @@ ul{
 section,footer{
   padding: 60px 0px;
 }
+
+/*-------- CUTOM SCROLL-BAR --------------*/
+
+::-webkit-scrollbar{
+  width: 10px;
+  background: #343444;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 24px;
+  background: linear-gradient(-45deg, #E250E5, #4B50E6, #E250E5, #4B50E6);
+}
