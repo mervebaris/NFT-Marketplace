@@ -33,6 +33,10 @@ useEffect(() =>{
       headerRef.current.classList.remove('header__shrink')
     }
    })
+
+   return () => {
+    window.removeEventListener("scroll")
+   }
 },[])
   
 
